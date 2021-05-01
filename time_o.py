@@ -3,11 +3,11 @@ import time
 
 # emum 枚举法 :最笨的方法
 start_time = time.time()
-for a in range(0,100):
-    for b in range(0, 100):
-        for c in range(0, 100):
-            if a + b + c == 100 and a ^ 2 + b ^ 2 == c ^ 2:
-                print("a, b, c :%d, %d ,%d" % (a, b, c))
+for a in range(0,1000):
+    for b in range(0, 1000):
+        c = 1000 - a - b
+        if a + b + c == 1000 and a ^ 2 + b ^ 2 == c ^ 2:
+            print("a, b, c :%d, %d ,%d" % (a, b, c))
 
 end_time = time.time()
 time = end_time - start_time
