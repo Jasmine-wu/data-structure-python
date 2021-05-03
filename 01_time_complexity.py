@@ -6,7 +6,7 @@ import time
 
 # emum 枚举法 :最笨的方法
 start_time = time.time()
-for a in range(0,1000):
+for a in range(0, 1000):
     for b in range(0, 1000):
         c = 1000 - a - b
         if a + b + c == 1000 and a ^ 2 + b ^ 2 == c ^ 2:
@@ -23,3 +23,29 @@ print("time complexity is %d", T)
 
 # 我们通常所说的时间复杂度，指的是最坏时间复杂度。
 
+# 数据结构：数据的组织方式
+# name
+# age
+# hometown
+
+[
+    ("zhangsan", 24, "beijing"),
+    ("zhangsan", 24, "beijing"),
+    ("zhangsan", 24, "beijing"),
+]
+
+[
+    {
+        "name": "zhangsan",
+        "age": "14",
+        "hometown": "beijing",
+
+    }
+]
+
+{
+    "zhangsan": {
+    "age": 14,
+    "hometown": "biejing"
+    }
+}
