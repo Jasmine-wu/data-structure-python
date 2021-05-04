@@ -17,6 +17,10 @@ class Single_link_list():
     def length(self):
         # 从头节点一个一个往后遍历计数
         # 注意特殊情况，空列表的处理cur is not None
+
+        # 如果是空列表，返回0
+        if self.is_empty():
+            return 0
         cur = self.__head
         count = 0
         while cur is not None:
@@ -30,6 +34,7 @@ class Single_link_list():
         while cur is not None:
             print(cur.elem, end=" ")
             cur = cur.next
+        print("")
 
     def add(self, item):
         # 头部添加节点
@@ -109,7 +114,6 @@ class Single_link_list():
             else:
                 cur = cur.next
         return False
-
 
 if __name__ == "__main__":
     sll = Single_link_list()
