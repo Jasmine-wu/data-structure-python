@@ -1,4 +1,5 @@
-# 用什么来实现栈？列表
+# 用什么来实现栈？
+# 先进后出
 class Stack():
     def __init__(self):
         self.__items = []
@@ -13,7 +14,7 @@ class Stack():
         if self.is_empty():
             return
         else:
-            self.__items.pop()
+            return self.__items.pop()
 
     def size(self):
         return len(self.__items)
@@ -37,7 +38,11 @@ if __name__ == "__main__":
     s.push("zhangsan")
     s.push("lisi")
     s.push("wanger")
-    s.pop()
+    print(s.pop())
+    print(s.pop())
+    print(s.pop())
+
+
     print(s.size())
     print(s.is_empty())
     print(s.peek())
