@@ -16,7 +16,6 @@ def bubble_sort(items):
         # 如果一次也没交换，说明数据是顺序排列的
         if count == 0:
             return items
-
     return items
 
 print(bubble_sort([1,2,3,4,5,6]))
