@@ -1,7 +1,8 @@
-
 # 两个栈实现一个队列
 
+
 class Queue():
+
     def __init__(self):
         self.stack1 = []
         self.stack2 = []
@@ -27,11 +28,10 @@ class Queue():
 if __name__ == '__main__':
 
     queue = Queue()
-    for i in range(0,10):
+    for i in range(0, 10):
         queue.put(i)
     print(queue.get())
     print(queue.get())
     print(queue.get())
     print(queue.get())
     print(queue.get())
-

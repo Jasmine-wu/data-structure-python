@@ -1,7 +1,7 @@
 # 如果 a+b+c=1000，且 a^2+b^2=c^2（a,b,c 为自然数），如何求出所有a、b、c可能的组合?
-# 时间复杂度：不同机器上运行相同的程序执行时间是不一样的，所以不能用执行时间衡量，用时间复杂度：运算步骤的数量
 
-# 时间复杂度： 描述算法的执行效率
+# 时间复杂度：不同机器上运行相同的程序执行时间是不一样的，所以不能用执行时间衡量，用时间复杂度即运算步骤的数量。
+
 import time
 
 # emum 枚举法 :最笨的方法
@@ -34,18 +34,10 @@ print("time complexity is %d", T)
     ("zhangsan", 24, "beijing"),
 ]
 
-[
-    {
-        "name": "zhangsan",
-        "age": "14",
-        "hometown": "beijing",
+[{
+    "name": "zhangsan",
+    "age": "14",
+    "hometown": "beijing",
+}]
 
-    }
-]
-
-{
-    "zhangsan": {
-    "age": 14,
-    "hometown": "biejing"
-    }
-}
+{"zhangsan": {"age": 14, "hometown": "biejing"}}

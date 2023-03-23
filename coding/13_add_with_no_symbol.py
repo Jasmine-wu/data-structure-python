@@ -1,5 +1,6 @@
-# 【python】不用加减乘除运算实现加法？
+# 不用加减乘除运算实现加法？
 # 位运算
+
 
 def add(a, b):
 
@@ -12,6 +13,6 @@ def add(a, b):
             break
     return sum
 
-if __name__ == "__main__":
-    print(add(77,88))
 
+if __name__ == "__main__":
+    print(add(77, 88))

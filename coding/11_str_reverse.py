@@ -3,10 +3,10 @@
 
 a = "changsha"
 
-#
+# 1.
 print(a[::-1])
 
-#
+# 2.
 b = list(a)
 b.reverse()
 print("".join(b))

@@ -1,6 +1,7 @@
 # L = [1, 2, 3, 11, 2, 5, 3, 2, 5, 3]，用一行代码得出 [11, 1, 2, 3, 5]
 # 列表去重(不考虑顺序)set()
 
+
 def test1():
     L = [1, 2, 3, 11, 2, 5, 3, 2, 5, 3]
     print(list(set(L)))
@@ -25,7 +26,7 @@ def test3():
     set1 = set(l)
     result = [(item, l.count(item)) for item in set1]
     print(result)
-    result.sort(key=lambda x:x[1], reverse=False)
+    result.sort(key=lambda x: x[1], reverse=False)
     print(result)
 
 
@@ -49,8 +50,6 @@ if __name__ == '__main__':
 
     print(testlambda(5)(10))
     test3()
-
-
 
 # 7、列表和字典有什么区别？
 # （1）获取元素的方式不同。列表通过索引值获取，字典通过键获取。

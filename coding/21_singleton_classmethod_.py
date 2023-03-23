@@ -1,8 +1,10 @@
 import threading
 import time
 
+
 # 类方法创建
 class Dog():
+
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -28,12 +30,15 @@ print(id(dog3))
 print(id(dog4))
 
 
-# 但是这样创建的单例在单线程是没问题的，但是遇到多线程就会出问题
+# 但是这样创建的单例在单线程虽然没问题，但是遇到多线程就会出问题
 def create():
     dog = Dog.get_instance("zhang", 11)
     print(dog)
 
-#  好像没啥问题啊=》在init方法里加sleep制造线程阻塞看看=>也没啥问题啊------
+
+# 好像没啥问题啊->在init方法里加sleep制造线程阻塞看看->也没啥问题啊
 for i in range(10):
-    t = threading.Thread(target=create(), args=[i, ])
+    t = threading.Thread(target=create(), args=[
+        i,
+    ])
     t.start()

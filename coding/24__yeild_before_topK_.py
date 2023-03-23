@@ -1,5 +1,5 @@
 # 生成器
-#  函数返回值关键字是yeild而不是return，那么这个函数就是一个生成器函数
+# 函数返回值关键字是yeild而不是return，那么这个函数就是一个生成器函数
 # 以 list 容器为例，在使用该容器迭代一组数据时，必须事先将所有数据存储到容器中，才能开始迭代；
 # 而生成器却不同，它可以实现在迭代的同时生成元素。
 import random
@@ -19,10 +19,9 @@ def generator():
 
 # yield 关键字出现的时候程序就已经暂停执行了，整个函数成了一个生成器函数。
 # 调用生成器函数，Python 解释器也不会执行函数中的代码，它只会返回一个生成器（对象）
-# 所以调用generator()也没有出现打印:执行， 0，更没有打印，开始执行
-
-# 当调用__next__整个生成器函数才开始执行，
-# 碰到yeild运行停止，且记住了这个位置，下次__next__会从这个位置开始继续执行
+# 所以调用generator()也没有出现打印更没有打印开始执行.
+# 当调用__next__整个生成器函数才开始执行。
+# 碰到yeild运行停止，且记住了这个位置，下次__next__会从这个位置开始继续执行。
 
 # g = generator()
 # g.__next__() # 0
@@ -56,11 +55,11 @@ start = time.time()
 result = heapq.nlargest(k, data)
 print(time.time() - start)
 
-
-# ============= 大文件按块读取=====
+# ============= 大文件按块读取===============
 # 1KB = = 2^10B= 1024B
 # 1MB = 1024KB = 1024 * 1024
 # 1GB = 1024MB = 1024 * 1024 * 1024
+
 
 def read_file(file_path, size=1024 * 1024):
     with open(file_path, 'r', encoding="utf-8") as f:
@@ -71,12 +70,10 @@ def read_file(file_path, size=1024 * 1024):
             else:
                 return
 
+
 for i in read_file():
     # 把大文件分成1M的小文件,对小的文件进行字符串统计:
-
     # 统计某个字符出现了次数
     l = list(set(i))
     # count = l.count("www.baidu.com")
     # result = [(item, l.count(item)) for item in l]
-
-

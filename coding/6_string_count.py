@@ -9,6 +9,7 @@ def count(content: str):
         result.append((s, content.count(s)))
     return result
 
+
 # 统计重复最多的n个字符#
 def max(l: list, n):
     l.sort(key=lambda x: x[1], reverse=True)
@@ -37,12 +38,12 @@ def string_reverse2(s):
 def string_reverse3(s):
     result = []
     l = len(s)
-    for i,c in enumerate(s):
+    for i, c in enumerate(s):
         # print(i,c)
         if c.isdigit():
             result.append(c)
         else:
-            result.append(s[l-i-1])
+            result.append(s[l - i - 1])
         #  简化
         # result.append(c) if c.isdigit() else result.append(a[l - i - 1])
     return "".join(result)
@@ -71,5 +72,3 @@ if __name__ == '__main__':
     text = "({[({{abc}})][{1}]})2([]){({[]})}[]"
     # print(is_closed(text))
     test(l)
-
-

@@ -1,8 +1,7 @@
-
 # 括号匹配
 def is_close(s):
     stack = []
-    bracket = {'}':'{', ']':'[',')':'('}
+    bracket = {'}': '{', ']': '[', ')': '('}
     for char in s:
         # 如果是反括号
         if char in bracket.values():
@@ -17,8 +16,8 @@ def is_close(s):
                 return False
     return True
 
+
 if __name__ == '__main__':
     text = "{[({{abc}})][{1}]})2([]){({[]})}[]"
     print(is_close(text))
     # print(is_closed(text))
-

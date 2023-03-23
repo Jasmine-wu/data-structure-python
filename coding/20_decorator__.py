@@ -1,5 +1,7 @@
 # 装饰器让你在一个函数的前后去执行代码。
 from functools import wraps
+
+
 def wrapper(func):
     # 解决name的问题
     @wraps(func)
@@ -7,11 +9,14 @@ def wrapper(func):
         print("before func() call", func)
         func(*args, **kwargs)
         print("after func() call", func)
+
     return inner
+
 
 @wrapper
 def log():
     print("print log")
+
 
 log()
 # log.__name__应该是log,但是这里却是inner

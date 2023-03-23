@@ -1,5 +1,6 @@
 #  n的阶乘
 
+
 def f(n):
     if isinstance(n, int) and n >= 0:
         if n == 0:

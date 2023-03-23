@@ -1,4 +1,5 @@
 class B():
+
     def fn(self):
         print('B fn')
 
@@ -7,6 +8,7 @@ class B():
 
 
 class A():
+
     def fn(self):
         print('A fn')
 

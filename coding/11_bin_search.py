@@ -1,7 +1,7 @@
-#二分查找需要序列首先有序。
+# 二分查找需要序列首先有序。
 # 思想是先用序列中间数和目标值对比，如果目标值小，则从前半部分（小于中间数）重复此查找，否则从后半部分重复此查找。
 # 返回的是下标
-def bin_search(l,n):
+def bin_search(l, n):
     # 找到最后都没找到或者一开始列表为空时候
 
     if len(l) == 0:
@@ -14,7 +14,7 @@ def bin_search(l,n):
     if l[mid] > n:
         return bin_search(l[:mid], n)
     else:
-        return bin_search(l[mid+1:], n)
+        return bin_search(l[mid + 1:], n)
 
 
 if __name__ == '__main__':
